@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Welp :)</title>
+    <title>
+    {% if marks>33%}
+    congratulations!!!!
+    {% else %}
+    sorry :/
+    {% endif %}
+    </title>
 </head>
 <body>
     <h1>"hello {{name}}"</h1>
+    {% if marks>33 %}
+    <h1>You passed!!!</h1>
+    {% else %}
+    <h1>You failed.</h1>
+    {% endif %}
+
 </body>
 </html>
